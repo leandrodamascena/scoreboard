@@ -1,0 +1,87 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: partial batch response sample
+
+Globals:
+  Function:
+    Timeout: 5
+    Runtime: python3.10
+    Tracing: Active
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: scoreboard
+        LOG_LEVEL: INFO
+        POWERTOOLS_METRICS_NAMESPACE: PowertoolsDemonstration
+
+    Layers:
+      - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:32
+
+Resources:
+  # Consume Function
+  ConsumerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: consumer.lambda_handler
+      CodeUri: scoreboard
+      FunctionName: scoreboard_consumer
+      Policies:
+        # Lambda Destinations require additional permissions
+        # to send failure records to DLQ from Kinesis/DynamoDB
+        - Version: "2012-10-17"
+          Statement:
+            Effect: "Allow"
+            Action:
+              - sqs:GetQueueAttributes
+              - sqs:GetQueueUrl
+              - sqs:SendMessage
+            Resource: !GetAtt DLQConsumer.Arn
+      Events:
+        KinesisStream:
+          Type: Kinesis
+          Properties:
+            Stream: !GetAtt ScoreBoardStream.Arn
+            BatchSize: 100
+            MaximumBatchingWindowInSeconds: 10
+            StartingPosition: LATEST
+            MaximumRetryAttempts: 2
+            DestinationConfig:
+              OnFailure:
+                Destination: !GetAtt DLQConsumer.Arn
+            FunctionResponseTypes:
+              - ReportBatchItemFailures
+
+  ConsumerFunctionPermissionKinesisInvoke:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !GetAtt ConsumerFunction.Arn
+      Principal: "kinesis.amazonaws.com"
+      SourceArn: !GetAtt ScoreBoardStream.Arn
+
+  ProducerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: producer.lambda_handler
+      CodeUri: scoreboard
+      FunctionName: scoreboard_producer
+      Policies:
+        # Lambda Destinations require additional permissions
+        # to send failure records to DLQ from Kinesis/DynamoDB
+        - Version: "2012-10-17"
+          Statement:
+            Effect: "Allow"
+            Action:
+              - kinesis:PutRecords
+            Resource: !GetAtt ScoreBoardStream.Arn
+
+  DLQConsumer:
+    Type: AWS::SQS::Queue
+
+  ScoreBoardStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: kds_scoreboard
+      ShardCount: 2
+      StreamEncryption:
+        EncryptionType: KMS
+        KeyId: alias/aws/kinesis

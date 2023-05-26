@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scoreboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="scoreboard">
+    <div class="tabs">
+      <button class="tab" onclick="changeTab(0)">Ranking Global</button>
+      <button class="tab" onclick="changeTab(1)">Per Country</button>
+      <button class="tab" onclick="changeTab(2)">Per Level</button>
+      <button class="tab" onclick="changeTab(3)">Per Stage</button>
+      <button class="tab" onclick="changeTab(4)">+++++++++</button>
+    </div>
+
+    <div class="content">
+      <div class="tab-content">
+        <table id="tab0-table" class="score-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0, 0)">Name</th>
+              <th onclick="sortTable(0, 1)">Points</th>
+              <th onclick="sortTable(0, 2)">Country</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="tab-content">
+        <table id="tab1-table" class="score-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(1, 0)">Name</th>
+              <th onclick="sortTable(1, 1)">Points</th>
+              <th onclick="sortTable(1, 2)">Country</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="tab-content">
+        <table id="tab2-table" class="score-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(2, 0)">Name</th>
+              <th onclick="sortTable(2, 1)">Points</th>
+              <th onclick="sortTable(2, 2)">Country</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="tab-content">
+        <table id="tab3-table" class="score-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(3, 0)">Name</th>
+              <th onclick="sortTable(3, 1)">Points</th>
+              <th onclick="sortTable(3, 2)">Country</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="tab-content">
+        <table id="tab4-table" class="score-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(4, 0)">Name</th>
+              <th onclick="sortTable(4, 1)">Points</th>
+              <th onclick="sortTable(4, 2)">Country</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

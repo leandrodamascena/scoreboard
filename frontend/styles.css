@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+}
+
+.tab.active {
+  background-color: #0099ff;
+  color: #ffffff;
+}
+
+.content {
+  width: 100%;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.score-table th,
+.score-table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.score-table th {
+  background-color: #0099ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.score-table th:hover {
+  background-color: #0077cc;
+}
+
+.score-table th.sorted {
+  background-color: #005299;
+}
+
+.score-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.score-table tbody tr:hover {
+  background-color: #e1e1e1;
+}
+
+/* Transition effect for table row changes */
+.score-table tbody tr {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Styles for sorted columns */
+.score-table.sorted-asc th,
+.score-table.sorted-asc td {
+  background-color: #f2f2f2;
+}
+
+.score-table.sorted-desc th,
+.score-table.sorted-desc td {
+  background-color: #f2f2f2;
+}
+
+.score-table.sorted-asc td.sorted-cell {
+  background-color: #e6f5f5;
+}
+
+.score-table.sorted-desc td.sorted-cell {
+  background-color: #f5e6e6;
+}
