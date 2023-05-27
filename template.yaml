@@ -11,7 +11,7 @@ Globals:
       Variables:
         POWERTOOLS_SERVICE_NAME: scoreboard
         LOG_LEVEL: INFO
-        POWERTOOLS_METRICS_NAMESPACE: PowertoolsDemonstration
+        POWERTOOLS_METRICS_NAMESPACE: PowertoolsScoreboard
 
     Layers:
       - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:32
@@ -24,6 +24,7 @@ Resources:
       Handler: consumer.lambda_handler
       CodeUri: scoreboard
       FunctionName: scoreboard_consumer
+      Timeout: 30
       Policies:
         # Lambda Destinations require additional permissions
         # to send failure records to DLQ from Kinesis/DynamoDB
@@ -35,6 +36,8 @@ Resources:
               - sqs:GetQueueUrl
               - sqs:SendMessage
             Resource: !GetAtt DLQConsumer.Arn
+        - DynamoDBCrudPolicy:
+            TableName: !Ref ScoreboardRawData
       Events:
         KinesisStream:
           Type: Kinesis
@@ -74,7 +77,117 @@ Resources:
               - kinesis:PutRecords
             Resource: !GetAtt ScoreBoardStream.Arn
 
+  SummarizeDataFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: summarize.lambda_handler
+      CodeUri: scoreboard
+      FunctionName: scoreboard_summarize
+      Timeout: 30
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            Effect: "Allow"
+            Action:
+              - sqs:GetQueueAttributes
+              - sqs:GetQueueUrl
+              - sqs:SendMessage
+            Resource: !GetAtt DLQSummarize.Arn
+        - DynamoDBCrudPolicy:
+            TableName: !Ref ScoreboardSummedUpData
+      Events:
+        DynamoDBStreamEvent:
+          Type: DynamoDB
+          Properties:
+            Stream: !GetAtt ScoreboardRawData.StreamArn
+            StartingPosition: LATEST
+            BatchSize: 10
+            MaximumBatchingWindowInSeconds: 2
+            MaximumRetryAttempts: 2
+            DestinationConfig:
+              OnFailure:
+                Destination: !GetAtt DLQSummarize.Arn
+            FunctionResponseTypes:
+              - ReportBatchItemFailures
+
+
+  ScoreboardRawData:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ScoreboardRawData
+      AttributeDefinitions:
+        - AttributeName: name
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: S
+      KeySchema:
+        - AttributeName: name
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      TimeToLiveSpecification:
+        AttributeName: expiration
+        Enabled: true
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
+
+  ScoreboardSummedUpData:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ScoreboardSummedUpData
+      AttributeDefinitions:
+        - AttributeName: name
+          AttributeType: S
+        - AttributeName: level
+          AttributeType: S
+        - AttributeName: os
+          AttributeType: S
+        - AttributeName: country
+          AttributeType: S
+      KeySchema:
+        - AttributeName: name
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      GlobalSecondaryIndexes:
+      - IndexName: LevelIndex
+        KeySchema:
+          - AttributeName: level
+            KeyType: HASH
+        Projection:
+          ProjectionType: ALL
+        ProvisionedThroughput:
+          ReadCapacityUnits: 5
+          WriteCapacityUnits: 5
+      - IndexName: OSIndex
+        KeySchema:
+          - AttributeName: os
+            KeyType: HASH
+        Projection:
+          ProjectionType: ALL
+        ProvisionedThroughput:
+          ReadCapacityUnits: 5
+          WriteCapacityUnits: 5
+      - IndexName: CountryIndex
+        KeySchema:
+          - AttributeName: country
+            KeyType: HASH
+        Projection:
+          ProjectionType: ALL
+        ProvisionedThroughput:
+          ReadCapacityUnits: 5
+          WriteCapacityUnits: 5
+
+
+
   DLQConsumer:
+    Type: AWS::SQS::Queue
+
+  DLQSummarize:
     Type: AWS::SQS::Queue
 
   ScoreBoardStream:

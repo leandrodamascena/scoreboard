@@ -3,62 +3,14 @@
     {
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215082705741826506875169931282",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWxleCIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogM30=",
-        "approximateArrivalTimestamp": 1685143822.256
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216527372096266163423853674514",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWxleCIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.22
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215082705741826506875169931282",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215083914667646121504344637458",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRW1tYSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215083914667646121504344637458",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215085123593465736133519343634",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215085123593465736133519343634",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215086332519285350762694049810",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTm9haCIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215086332519285350762694049810",
+      "eventID": "shardId-000000000001:49641136603291789101107601216527372096266163423853674514",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -68,29 +20,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215087541445104965391868755986",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQXZhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDJ9",
-        "approximateArrivalTimestamp": 1685143822.258
+        "sequenceNumber": "49641136603291789101107601216528581022085778053028380690",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRW1tYSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215087541445104965391868755986",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215088750370924580021043462162",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSXNhYmVsbGEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215088750370924580021043462162",
+      "eventID": "shardId-000000000001:49641136603291789101107601216528581022085778053028380690",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -100,205 +36,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215089959296744194650218168338",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVjYXMiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
+        "sequenceNumber": "49641136603291789101107601216529789947905392682203086866",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215089959296744194650218168338",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215091168222563809279392874514",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215091168222563809279392874514",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215092377148383423908567580690",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW1lbGlhIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215092377148383423908567580690",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215093586074203038537742286866",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hhcmxvdHRlIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215093586074203038537742286866",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215094795000022653166916993042",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRXRoYW4iLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215094795000022653166916993042",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215096003925842267796091699218",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWlkZW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215096003925842267796091699218",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215097212851661882425266405394",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWljaGFlbCIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215097212851661882425266405394",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215098421777481497054441111570",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWF0dGhldyIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215098421777481497054441111570",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215099630703301111683615817746",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSmFtZXMiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215099630703301111683615817746",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215100839629120726312790523922",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2NhcmxldHQiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215100839629120726312790523922",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215102048554940340941965230098",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgR3JhY2UiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215102048554940340941965230098",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215103257480759955571139936274",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFubmFoIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215103257480759955571139936274",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215104466406579570200314642450",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW5kcmV3IiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDB9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215104466406579570200314642450",
+      "eventID": "shardId-000000000001:49641136603291789101107601216529789947905392682203086866",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -308,13 +52,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215105675332399184829489348626",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgVmljdG9yaWEiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
+        "sequenceNumber": "49641136603291789101107601216530998873725007311377793042",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQXZhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215105675332399184829489348626",
+      "eventID": "shardId-000000000001:49641136603291789101107601216530998873725007311377793042",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -324,13 +68,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215106884258218799458664054802",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgWm9lIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.258
+        "sequenceNumber": "49641136603291789101107601216532207799544621940552499218",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgT2xpdmVyIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215106884258218799458664054802",
+      "eventID": "shardId-000000000001:49641136603291789101107601216532207799544621940552499218",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -340,205 +84,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215108093184038414087838760978",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRXRoYW4iLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.258
+        "sequenceNumber": "49641136603291789101107601216533416725364236569727205394",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSXNhYmVsbGEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215108093184038414087838760978",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215109302109858028717013467154",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTm9yYSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215109302109858028717013467154",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215110511035677643346188173330",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zaHVhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215110511035677643346188173330",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215111719961497257975362879506",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxsYSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215111719961497257975362879506",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215112928887316872604537585682",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgV2lsbGlhbSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215112928887316872604537585682",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215114137813136487233712291858",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215114137813136487233712291858",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215115346738956101862886998034",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgVmlvbGV0IiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215115346738956101862886998034",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215116555664775716492061704210",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVjeSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215116555664775716492061704210",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215117764590595331121236410386",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2FtdWVsIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215117764590595331121236410386",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215118973516414945750411116562",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgR2FicmllbCIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.258
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215118973516414945750411116562",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215120182442234560379585822738",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFycGVyIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215120182442234560379585822738",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215121391368054175008760528914",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWlkZW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215121391368054175008760528914",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215122600293873789637935235090",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDV9",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215122600293873789637935235090",
+      "eventID": "shardId-000000000001:49641136603291789101107601216533416725364236569727205394",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -548,125 +100,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215123809219693404267109941266",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hsb2UiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.259
+        "sequenceNumber": "49641136603291789101107601216534625651183851198901911570",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVjYXMiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215123809219693404267109941266",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215125018145513018896284647442",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2FsZWIiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215125018145513018896284647442",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215126227071332633525459353618",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGF6ZWwiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogM30=",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215126227071332633525459353618",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215127435997152248154634059794",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWF0dGhldyIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215127435997152248154634059794",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215128644922971862783808765970",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgWm9leSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215128644922971862783808765970",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215129853848791477412983472146",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.259
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215129853848791477412983472146",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215131062774611092042158178322",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgUmlsZXkiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215131062774611092042158178322",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215132271700430706671332884498",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRW1pbHkiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215132271700430706671332884498",
+      "eventID": "shardId-000000000001:49641136603291789101107601216534625651183851198901911570",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -676,45 +116,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215133480626250321300507590674",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGVucnkiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216535834577003465828076617746",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215133480626250321300507590674",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215134689552069935929682296850",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgUGVuZWxvcGUiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215134689552069935929682296850",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215135898477889550558857003026",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxsYSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215135898477889550558857003026",
+      "eventID": "shardId-000000000001:49641136603291789101107601216535834577003465828076617746",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -724,13 +132,29 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215137107403709165188031709202",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216537043502823080457251323922",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW1lbGlhIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215137107403709165188031709202",
+      "eventID": "shardId-000000000001:49641136603291789101107601216537043502823080457251323922",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216538252428642695086426030098",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hhcmxvdHRlIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDIsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216538252428642695086426030098",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -740,13 +164,93 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215138316329528779817206415378",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWF5YSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216539461354462309715600736274",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFycGVyIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDUsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215138316329528779817206415378",
+      "eventID": "shardId-000000000001:49641136603291789101107601216539461354462309715600736274",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216540670280281924344775442450",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRXZlbHluIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216540670280281924344775442450",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216541879206101538973950148626",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWlkZW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMywgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216541879206101538973950148626",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216543088131921153603124854802",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216543088131921153603124854802",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216544297057740768232299560978",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSmFtZXMiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216544297057740768232299560978",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216545505983560382861474267154",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2NhcmxldHQiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216545505983560382861474267154",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -756,13 +260,125 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215139525255348394446381121554",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNX0=",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216546714909379997490648973330",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgR3JhY2UiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215139525255348394446381121554",
+      "eventID": "shardId-000000000001:49641136603291789101107601216546714909379997490648973330",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216547923835199612119823679506",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216547923835199612119823679506",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216549132761019226748998385682",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFubmFoIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216549132761019226748998385682",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216550341686838841378173091858",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW5kcmV3IiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216550341686838841378173091858",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216551550612658456007347798034",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgVmljdG9yaWEiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216551550612658456007347798034",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216552759538478070636522504210",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9obiIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216552759538478070636522504210",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216553968464297685265697210386",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216553968464297685265697210386",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216555177390117299894871916562",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgUGVuZWxvcGUiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMywgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216555177390117299894871916562",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -772,13 +388,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215140734181168009075555827730",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxlYW5vciIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216556386315936914524046622738",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRXRoYW4iLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215140734181168009075555827730",
+      "eventID": "shardId-000000000001:49641136603291789101107601216556386315936914524046622738",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -787,14 +403,14 @@
     {
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215141943106987623704730533906",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTmF0aGFuIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDJ9",
-        "approximateArrivalTimestamp": 1685143822.26
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216557595241756529153221328914",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zaHVhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215141943106987623704730533906",
+      "eventID": "shardId-000000000001:49641136603291789101107601216557595241756529153221328914",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -803,30 +419,14 @@
     {
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215143152032807238333905240082",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVjeSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.26
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216558804167576143782396035090",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgV2lsbGlhbSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215143152032807238333905240082",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215144360958626852963079946258",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2FtdWVsIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDB9",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215144360958626852963079946258",
+      "eventID": "shardId-000000000001:49641136603291789101107601216558804167576143782396035090",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -836,29 +436,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215145569884446467592254652434",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQmVsbGEiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216560013093395758411570741266",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215145569884446467592254652434",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215146778810266082221429358610",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGVucnkiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDB9",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215146778810266082221429358610",
+      "eventID": "shardId-000000000001:49641136603291789101107601216560013093395758411570741266",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -868,45 +452,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215147987736085696850604064786",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTGF5bGEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216561222019215373040745447442",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW50aG9ueSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215147987736085696850604064786",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215149196661905311479778770962",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2NhcmxldHQiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215149196661905311479778770962",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215150405587724926108953477138",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwfQ==",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215150405587724926108953477138",
+      "eventID": "shardId-000000000001:49641136603291789101107601216561222019215373040745447442",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -916,61 +468,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215151614513544540738128183314",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFubmFoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDJ9",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216562430945034987669920153618",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVjeSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215151614513544540738128183314",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215152823439364155367302889490",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGF2aWQiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogM30=",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215152823439364155367302889490",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215154032365183769996477595666",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDJ9",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215154032365183769996477595666",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215155241291003384625652301842",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.26
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215155241291003384625652301842",
+      "eventID": "shardId-000000000001:49641136603291789101107601216562430945034987669920153618",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -980,13 +484,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215156450216822999254827008018",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216563639870854602299094859794",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2FtdWVsIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215156450216822999254827008018",
+      "eventID": "shardId-000000000001:49641136603291789101107601216563639870854602299094859794",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -995,14 +499,30 @@
     {
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215157659142642613884001714194",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogM30=",
-        "approximateArrivalTimestamp": 1685143822.26
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216564848796674216928269565970",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWF5YSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215157659142642613884001714194",
+      "eventID": "shardId-000000000001:49641136603291789101107601216564848796674216928269565970",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216566057722493831557444272146",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgR2FicmllbCIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216566057722493831557444272146",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1012,13 +532,45 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215158868068462228513176420370",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDB9",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216567266648313446186618978322",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFycGVyIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215158868068462228513176420370",
+      "eventID": "shardId-000000000001:49641136603291789101107601216567266648313446186618978322",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216568475574133060815793684498",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQWlkZW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216568475574133060815793684498",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216569684499952675444968390674",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216569684499952675444968390674",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1028,13 +580,125 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000005",
-        "sequenceNumber": "49641136603291789101107601215160076994281843142351126546",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2FtdWVsIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1fQ==",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216570893425772290074143096850",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSXNhYWMiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215160076994281843142351126546",
+      "eventID": "shardId-000000000001:49641136603291789101107601216570893425772290074143096850",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216572102351591904703317803026",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTHVuYSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDIsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216572102351591904703317803026",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216573311277411519332492509202",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSmFja3NvbiIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMyIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.222
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216573311277411519332492509202",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216574520203231133961667215378",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2FsZWIiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.223
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216574520203231133961667215378",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216575729129050748590841921554",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGF6ZWwiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.223
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216575729129050748590841921554",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216576938054870363220016627730",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgWm9leSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.223
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216576938054870363220016627730",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216578146980689977849191333906",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGFuaWVsIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwxIiwgIm9zIjogImlPUyIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216578146980689977849191333906",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216579355906509592478366040082",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgUmlsZXkiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216579355906509592478366040082",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1044,13 +708,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215161285920101457771525832722",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQXZlcnkiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.26
+        "sequenceNumber": "49641136603291789101107601216580564832329207107540746258",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgT3dlbiIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215161285920101457771525832722",
+      "eventID": "shardId-000000000001:49641136603291789101107601216580564832329207107540746258",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1060,13 +724,109 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000000",
-        "sequenceNumber": "49641136603291789101107601215162494845921072400700538898",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMH0=",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216581773758148821736715452434",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRW1pbHkiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215162494845921072400700538898",
+      "eventID": "shardId-000000000001:49641136603291789101107601216581773758148821736715452434",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216582982683968436365890158610",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgUGVuZWxvcGUiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216582982683968436365890158610",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216584191609788050995064864786",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDMsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216584191609788050995064864786",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216585400535607665624239570962",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxsYSIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216585400535607665624239570962",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216586609461427280253414277138",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216586609461427280253414277138",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216587818387246894882588983314",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWF5YSIsICJjb3VudHJ5IjogIkl0YWx5IiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216587818387246894882588983314",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000003",
+        "sequenceNumber": "49641136603291789101107601216589027313066509511763689490",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMywgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216589027313066509511763689490",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1076,29 +836,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215163703771740687029875245074",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216590236238886124140938395666",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxlYW5vciIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215163703771740687029875245074",
-      "eventName": "aws:kinesis:record",
-      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
-      "awsRegion": "us-east-1",
-      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
-    },
-    {
-      "kinesis": {
-        "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215164912697560301659049951250",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDN9",
-        "approximateArrivalTimestamp": 1685143822.261
-      },
-      "eventSource": "aws:kinesis",
-      "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215164912697560301659049951250",
+      "eventID": "shardId-000000000001:49641136603291789101107601216590236238886124140938395666",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1108,13 +852,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215166121623379916288224657426",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxsYSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMn0=",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216591445164705738770113101842",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTmF0aGFuIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDIsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215166121623379916288224657426",
+      "eventID": "shardId-000000000001:49641136603291789101107601216591445164705738770113101842",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1123,14 +867,46 @@
     {
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
-        "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215167330549199530917399363602",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQXZhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogM30=",
-        "approximateArrivalTimestamp": 1685143822.261
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216592654090525353399287808018",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQmVsbGEiLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMNCIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215167330549199530917399363602",
+      "eventID": "shardId-000000000001:49641136603291789101107601216592654090525353399287808018",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216593863016344968028462514194",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGVucnkiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216593863016344968028462514194",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216595071942164582657637220370",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTGF5bGEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDUsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216595071942164582657637220370",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1140,13 +916,13 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000002",
-        "sequenceNumber": "49641136603291789101107601215168539475019145546574069778",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyfQ==",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216596280867984197286811926546",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW5kcmV3IiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215168539475019145546574069778",
+      "eventID": "shardId-000000000001:49641136603291789101107601216596280867984197286811926546",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1156,13 +932,253 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215169748400838760175748775954",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFycGVyIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAzfQ==",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216597489793803811915986632722",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2NhcmxldHQiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMywgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215169748400838760175748775954",
+      "eventID": "shardId-000000000001:49641136603291789101107601216597489793803811915986632722",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216598698719623426545161338898",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFubmFoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDIiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216598698719623426545161338898",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216599907645443041174336045074",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRGF2aWQiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216599907645443041174336045074",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216601116571262655803510751250",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgR3JhY2UiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216601116571262655803510751250",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216602325497082270432685457426",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDUsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216602325497082270432685457426",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216603534422901885061860163602",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216603534422901885061860163602",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216604743348721499691034869778",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216604743348721499691034869778",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216605952274541114320209575954",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQW1lbGlhIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216605952274541114320209575954",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216607161200360728949384282130",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAyLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216607161200360728949384282130",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216608370126180343578558988306",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgWm9lIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216608370126180343578558988306",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216609579051999958207733694482",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTWlhIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkw0IiwgIm9zIjogImlPUyIsICJzY29yZSI6IDIsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.224
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216609579051999958207733694482",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216610787977819572836908400658",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU2FtdWVsIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216610787977819572836908400658",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216611996903639187466083106834",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQ2hyaXN0b3BoZXIiLCAiY291bnRyeSI6ICJCcmF6aWwiLCAibGV2ZWwiOiAiTDEiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogNSwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216611996903639187466083106834",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000002",
+        "sequenceNumber": "49641136603291789101107601216613205829458802095257813010",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgU29maWEiLCAiY291bnRyeSI6ICJTd2VkZW4iLCAibGV2ZWwiOiAiTDQiLCAib3MiOiAiaU9TIiwgInNjb3JlIjogMiwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216613205829458802095257813010",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216614414755278416724432519186",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSm9zZXBoIiwgImNvdW50cnkiOiAiSXRhbHkiLCAibGV2ZWwiOiAiTDMiLCAib3MiOiAiQW5kcm9pZCIsICJzY29yZSI6IDAsICJ0aW1lc3RhbXAiOiAxNjg1MTQ2MzYzfQ==",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216614414755278416724432519186",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216615623681098031353607225362",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgRWxsYSIsICJjb3VudHJ5IjogIkJyYXppbCIsICJsZXZlbCI6ICJMMiIsICJvcyI6ICJBbmRyb2lkIiwgInNjb3JlIjogMCwgInRpbWVzdGFtcCI6IDE2ODUxNDYzNjN9",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216615623681098031353607225362",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",
@@ -1172,13 +1188,61 @@
       "kinesis": {
         "kinesisSchemaVersion": "1.0",
         "partitionKey": "shardId-000000000003",
-        "sequenceNumber": "49641136603291789101107601215170957326658374804923482130",
-        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQmVuamFtaW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzfQ==",
-        "approximateArrivalTimestamp": 1685143822.261
+        "sequenceNumber": "49641136603291789101107601216616832606917645982781931538",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgTm9haCIsICJjb3VudHJ5IjogIlN3ZWRlbiIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiAzLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.225
       },
       "eventSource": "aws:kinesis",
       "eventVersion": "1.0",
-      "eventID": "shardId-000000000001:49641136603291789101107601215170957326658374804923482130",
+      "eventID": "shardId-000000000001:49641136603291789101107601216616832606917645982781931538",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216618041532737260611956637714",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSnVsaWFuIiwgImNvdW50cnkiOiAiQnJhemlsIiwgImxldmVsIjogIkwzIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216618041532737260611956637714",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000000",
+        "sequenceNumber": "49641136603291789101107601216619250458556875241131343890",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgSGFycGVyIiwgImNvdW50cnkiOiAiU3dlZGVuIiwgImxldmVsIjogIkwyIiwgIm9zIjogIkFuZHJvaWQiLCAic2NvcmUiOiAwLCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216619250458556875241131343890",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:200984112386:stream/kds_scoreboard"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "shardId-000000000005",
+        "sequenceNumber": "49641136603291789101107601216620459384376489870306050066",
+        "data": "eyJwbGF5ZXJfbmFtZSI6ICJQTEFZRVIgQmVuamFtaW4iLCAiY291bnRyeSI6ICJJdGFseSIsICJsZXZlbCI6ICJMMSIsICJvcyI6ICJpT1MiLCAic2NvcmUiOiA1LCAidGltZXN0YW1wIjogMTY4NTE0NjM2M30=",
+        "approximateArrivalTimestamp": 1685146364.225
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000001:49641136603291789101107601216620459384376489870306050066",
       "eventName": "aws:kinesis:record",
       "invokeIdentityArn": "arn:aws:iam::200984112386:role/scoreboard-ConsumerFunctionRole-1AWNFVK0QK6V",
       "awsRegion": "us-east-1",

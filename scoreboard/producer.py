@@ -1,5 +1,6 @@
 import json
 import random
+from datetime import datetime
 from typing import Any, Dict, List
 
 import boto3
@@ -26,6 +27,7 @@ def lambda_handler(event: dict, context: LambdaContext) -> dict:
             # generating a random score between 0 and 5
             score: int = random.randint(0, 5)
             data["score"] = score
+            data["timestamp"] = str(datetime.now())
 
             # creating the kinesis record to add using put_records method
             kinesis_record: Dict[str, Any] = {
