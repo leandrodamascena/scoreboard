@@ -48,7 +48,7 @@ PLAYER_SCHEMA = {
         "timestamp": {
             "$id": "#root/score",
             "title": "Score",
-            "type": "integer",
+            "type": "string",
             "examples": [3],
             "default": 0,
         },

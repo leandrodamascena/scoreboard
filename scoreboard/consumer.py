@@ -77,8 +77,6 @@ def record_handler(record: KinesisStreamRecord) -> None:
 
         # Adding data to DynamoDB
         dynamodb_client.put_item(TableName="ScoreboardRawData", Item=item)
-        # dynamodb_client.put_item(item)
-        # ...
     except SchemaValidationError as exc:
         # Handle schema validation error
         logger.error("Player data validation failed", error=str(exc))

@@ -1,0 +1,274 @@
+{
+  "Records": [
+    {
+      "eventID": "8c8557536497ca6f35796bff0be445b9",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Matthew" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804927" }
+        },
+        "NewImage": {
+          "country": { "S": "Sweden" },
+          "score": { "N": "3" },
+          "level": { "S": "L3" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Matthew" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804927" }
+        },
+        "SequenceNumber": "7600000000039620723481",
+        "SizeBytes": 174,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "54d943f56be4397aefeac8f52143bac0",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Zoey" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804933" }
+        },
+        "NewImage": {
+          "country": { "S": "Italy" },
+          "score": { "N": "3" },
+          "level": { "S": "L2" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Zoey" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804933" }
+        },
+        "SequenceNumber": "7700000000039620723609",
+        "SizeBytes": 167,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "80db5e52eb0c40d999684f795f55f3b5",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Owen" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804954" }
+        },
+        "NewImage": {
+          "country": { "S": "Italy" },
+          "score": { "N": "2" },
+          "level": { "S": "L3" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Owen" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804954" }
+        },
+        "SequenceNumber": "7800000000039620723725",
+        "SizeBytes": 167,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "987b3aa0c1c015f4072ec40d1d341ac0",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Christopher" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804978" }
+        },
+        "NewImage": {
+          "country": { "S": "Brazil" },
+          "score": { "N": "5" },
+          "level": { "S": "L3" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Christopher" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804978" }
+        },
+        "SequenceNumber": "7900000000039620723814",
+        "SizeBytes": 182,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "122da0ef8719ef64f187c59e4d3f635a",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Ella" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804985" }
+        },
+        "NewImage": {
+          "country": { "S": "Sweden" },
+          "score": { "N": "5" },
+          "level": { "S": "L2" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Ella" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.804985" }
+        },
+        "SequenceNumber": "8000000000039620723891",
+        "SizeBytes": 168,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "ab59a5e7b29690867c3a7418d6089f5d",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Julian" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805004" }
+        },
+        "NewImage": {
+          "country": { "S": "Sweden" },
+          "score": { "N": "3" },
+          "level": { "S": "L3" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Julian" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805004" }
+        },
+        "SequenceNumber": "8100000000039620723995",
+        "SizeBytes": 172,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "06161565fcd095abe6baf89d71a4e7cd",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Maya" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805010" }
+        },
+        "NewImage": {
+          "country": { "S": "Italy" },
+          "score": { "N": "3" },
+          "level": { "S": "L2" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Maya" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805010" }
+        },
+        "SequenceNumber": "8200000000039620724081",
+        "SizeBytes": 167,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "b9a7bfac71d532c1f42c21195b492508",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Christopher" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805016" }
+        },
+        "NewImage": {
+          "country": { "S": "Brazil" },
+          "score": { "N": "3" },
+          "level": { "S": "L1" },
+          "operational_system": { "S": "iOS" },
+          "name": { "S": "PLAYER Christopher" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805016" }
+        },
+        "SequenceNumber": "8300000000039620724174",
+        "SizeBytes": 178,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "62263cce7f24b7446c78d817f0456033",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154852.0,
+        "Keys": {
+          "name": { "S": "PLAYER Eleanor" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805023" }
+        },
+        "NewImage": {
+          "country": { "S": "Sweden" },
+          "score": { "N": "0" },
+          "level": { "S": "L4" },
+          "operational_system": { "S": "iOS" },
+          "name": { "S": "PLAYER Eleanor" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805023" }
+        },
+        "SequenceNumber": "8400000000039620724270",
+        "SizeBytes": 169,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    },
+    {
+      "eventID": "ec65cda3ecdf0d884693d5bfaf6363ee",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1685154853.0,
+        "Keys": {
+          "name": { "S": "PLAYER Nathan" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805030" }
+        },
+        "NewImage": {
+          "country": { "S": "Italy" },
+          "score": { "N": "2" },
+          "level": { "S": "L3" },
+          "operational_system": { "S": "Android" },
+          "name": { "S": "PLAYER Nathan" },
+          "expiration": { "N": "1685241252" },
+          "timestamp": { "S": "2023-05-27 02:33:59.805030" }
+        },
+        "SequenceNumber": "8500000000039620724438",
+        "SizeBytes": 171,
+        "StreamViewType": "NEW_IMAGE"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:200984112386:table/ScoreboardRawData/stream/2023-05-27T02:23:15.703"
+    }
+  ]
+}
