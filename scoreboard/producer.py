@@ -31,7 +31,7 @@ def lambda_handler(event: dict, context: LambdaContext) -> dict:
 
             # creating the kinesis record to add using put_records method
             kinesis_record: Dict[str, Any] = {
-                "PartitionKey": f"shardId-00000000000{score}",
+                "PartitionKey": f"shardId-000000000001",
                 "Data": json.dumps(data),
             }
 
