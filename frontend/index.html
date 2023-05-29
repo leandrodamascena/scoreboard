@@ -10,7 +10,7 @@
     <div class="tabs">
       <button class="tab" onclick="changeTab(0)">Ranking Global</button>
       <button class="tab" onclick="changeTab(1)">Per Country</button>
-      <button class="tab" onclick="changeTab(2)">Per Level</button>
+      <!--<button class="tab" onclick="changeTab(2)">Per Level</button>-->
     </div>
 
     <div class="content">
@@ -29,17 +29,50 @@
       </div>
 
       <div class="tab-content">
-        <table id="tab1-table" class="score-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Points</th>
-              <th>Country</th>
-              <th>OS</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <div class="subtabs">
+          <button class="subtab" onclick="changeSubTab(0)">Brazil</button>
+          <button class="subtab" onclick="changeSubTab(1)">Italy</button>
+          <button class="subtab" onclick="changeSubTab(2)">Sweden</button>
+        </div>
+        <div class="subtab-content">
+          <table id="subtab0-table" class="score-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Country</th>
+                <th>OS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="subtab-content">
+          <table id="subtab1-table" class="score-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Country</th>
+                <th>OS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="subtab-content">
+          <table id="subtab2-table" class="score-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Country</th>
+                <th>OS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
 
       <div class="tab-content">

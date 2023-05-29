@@ -37,6 +37,28 @@ body {
   color: #ffffff;
 }
 
+.sub-tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sub-tab {
+  padding: 10px 20px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+}
+
+.sub-tab.active {
+  background-color: #0099ff;
+  color: #ffffff;
+}
+
 .content {
   width: 100%;
 }
@@ -50,6 +72,14 @@ body {
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 4px;
+}
+
+.subtab-content {
+  display: none;
+}
+
+.subtab-content.active {
+  display: block;
 }
 
 .score-table {
