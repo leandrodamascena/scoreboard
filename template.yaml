@@ -44,6 +44,24 @@ Resources:
         EncryptionType: KMS
         KeyId: alias/aws/kinesis
 
+  EventRuleScheduledProducer:
+    Type: AWS::Events::Rule
+    Properties: 
+      Name: scheduled-producer-scoreboard
+      ScheduleExpression: rate(1 minute)
+      State: ENABLED
+      Targets: 
+        - Arn: !GetAtt ProducerFunction.Arn
+          Id: !Ref ProducerFunction
+  
+  ProducerPermissionScheduler: 
+    Type: AWS::Lambda::Permission
+    Properties: 
+      FunctionName: !Ref ProducerFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt EventRuleScheduledProducer.Arn
+
   # RESOURCES FOR CONSUMER: Kinesis -> Lambda -> DynamoDB
   ConsumerFunction:
     Type: AWS::Serverless::Function
@@ -223,7 +241,7 @@ Resources:
           Properties:
             RestApiId: !Ref RestApiScoreboard
             Path: /score
-            Method: get
+            Method: any
             RequestParameters:
               - method.request.querystring.order: 
                   Required: true
