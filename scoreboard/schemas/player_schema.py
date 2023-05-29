@@ -4,7 +4,7 @@ PLAYER_SCHEMA = {
     "$id": "https://example.com/object1685148430.json",
     "title": "Root",
     "type": "object",
-    "required": ["player_name", "country", "timestamp", "level", "os", "score"],
+    "required": ["player_name", "player_country", "timestamp", "player_level", "player_os", "score"],
     "properties": {
         "player_name": {
             "$id": "#root/player_name",
@@ -14,24 +14,24 @@ PLAYER_SCHEMA = {
             "examples": ["PLAYER Alex"],
             "pattern": "^.*$",
         },
-        "country": {
-            "$id": "#root/country",
+        "player_country": {
+            "$id": "#root/player_country",
             "title": "Country",
             "type": "string",
             "default": "",
             "examples": ["Brazil"],
             "pattern": "^.*$",
         },
-        "level": {
-            "$id": "#root/level",
+        "player_level": {
+            "$id": "#root/player_level",
             "title": "Level",
             "type": "string",
             "default": "",
             "examples": ["L1"],
             "pattern": "^.*$",
         },
-        "os": {
-            "$id": "#root/os",
+        "player_os": {
+            "$id": "#root/player_os",
             "title": "Os",
             "type": "string",
             "default": "",

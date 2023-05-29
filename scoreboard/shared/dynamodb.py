@@ -3,6 +3,25 @@ from typing import List
 import boto3
 
 
+def build_and_query_dynamodb(dynamodb_client, order_by: str, filter: str = "") -> str:
+    scan_params = {"TableName": "ScoreboardSummedUpData"}
+
+    if order_by == "player_country":
+        scan_params["FilterExpression"] = "player_country = :player_country"
+        scan_params["ExpressionAttributeValues"] = {":player_country": {"S": filter}}
+
+    if order_by == "player_level":
+        scan_params["FilterExpression"] = "player_level = :player_level"
+        scan_params["ExpressionAttributeValues"] = {":player_level": {"S": filter}}
+
+    response = dynamodb_client.scan(**scan_params)
+
+    items = response["Items"]
+    sorted_items = sorted(items, key=lambda x: int(x["score"]["N"]), reverse=True)
+
+    return sorted_items
+
+
 class DynamoDBBatchHelper:
     """
     Helper class for performing batch write operations in DynamoDB.

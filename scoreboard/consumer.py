@@ -58,19 +58,19 @@ def record_handler(record: KinesisStreamRecord) -> None:
         # Extracting player attributes
         player_name = kinesis_record.get("player_name")
         timestamp = kinesis_record.get("timestamp")
-        country = kinesis_record.get("country")
-        operational_system = kinesis_record.get("os")
-        level = kinesis_record.get("level")
+        player_country = kinesis_record.get("player_country")
+        player_os = kinesis_record.get("player_os")
+        player_level = kinesis_record.get("player_level")
         score = kinesis_record.get("score")
         # adding 1 day to expire ttl
         expiration = int(datetime.now().timestamp()) + 86400
 
         item = {
-            "name": {"S": player_name},
+            "player_name": {"S": player_name},
             "timestamp": {"S": str(timestamp)},
-            "country": {"S": country},
-            "operational_system": {"S": operational_system},
-            "level": {"S": level},
+            "player_country": {"S": player_country},
+            "player_os": {"S": player_os},
+            "player_level": {"S": player_level},
             "score": {"N": str(score)},
             "expiration": {"N": str(expiration)},
         }

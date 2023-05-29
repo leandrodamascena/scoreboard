@@ -17,7 +17,34 @@ Globals:
       - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:32
 
 Resources:
-  # Consume Function
+
+  # RESOURCES FOR PRODUCER: EventBridge -> Lambda -> Kinesis
+  ProducerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: producer.lambda_handler
+      CodeUri: scoreboard
+      FunctionName: scoreboard_producer
+      Policies:
+        # Lambda Destinations require additional permissions
+        # to send failure records to DLQ from Kinesis/DynamoDB
+        - Version: "2012-10-17"
+          Statement:
+            Effect: "Allow"
+            Action:
+              - kinesis:PutRecords
+            Resource: !GetAtt ScoreBoardStream.Arn
+
+  ScoreBoardStream:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: kds_scoreboard
+      ShardCount: 1
+      StreamEncryption:
+        EncryptionType: KMS
+        KeyId: alias/aws/kinesis
+
+  # RESOURCES FOR CONSUMER: Kinesis -> Lambda -> DynamoDB
   ConsumerFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -43,8 +70,8 @@ Resources:
           Type: Kinesis
           Properties:
             Stream: !GetAtt ScoreBoardStream.Arn
-            BatchSize: 100
-            MaximumBatchingWindowInSeconds: 10
+            BatchSize: 10
+            MaximumBatchingWindowInSeconds: 2
             StartingPosition: LATEST
             MaximumRetryAttempts: 2
             DestinationConfig:
@@ -61,22 +88,34 @@ Resources:
       Principal: "kinesis.amazonaws.com"
       SourceArn: !GetAtt ScoreBoardStream.Arn
 
-  ProducerFunction:
-    Type: AWS::Serverless::Function
+  ScoreboardRawData:
+    Type: AWS::DynamoDB::Table
     Properties:
-      Handler: producer.lambda_handler
-      CodeUri: scoreboard
-      FunctionName: scoreboard_producer
-      Policies:
-        # Lambda Destinations require additional permissions
-        # to send failure records to DLQ from Kinesis/DynamoDB
-        - Version: "2012-10-17"
-          Statement:
-            Effect: "Allow"
-            Action:
-              - kinesis:PutRecords
-            Resource: !GetAtt ScoreBoardStream.Arn
+      TableName: ScoreboardRawData
+      AttributeDefinitions:
+        - AttributeName: player_name
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: S
+      KeySchema:
+        - AttributeName: player_name
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      TimeToLiveSpecification:
+        AttributeName: expiration
+        Enabled: true
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
 
+  DLQConsumer:
+    Type: AWS::SQS::Queue
+
+  
+  # RESOURCES FOR SUMMARIZE: DynamoDB -> Lambda -> DynamoDB
   SummarizeDataFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -110,91 +149,92 @@ Resources:
             FunctionResponseTypes:
               - ReportBatchItemFailures
 
-
-  ScoreboardRawData:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      TableName: ScoreboardRawData
-      AttributeDefinitions:
-        - AttributeName: name
-          AttributeType: S
-        - AttributeName: timestamp
-          AttributeType: S
-      KeySchema:
-        - AttributeName: name
-          KeyType: HASH
-        - AttributeName: timestamp
-          KeyType: RANGE
-      ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 5
-      TimeToLiveSpecification:
-        AttributeName: expiration
-        Enabled: true
-      StreamSpecification:
-        StreamViewType: NEW_IMAGE
-
   ScoreboardSummedUpData:
     Type: AWS::DynamoDB::Table
     Properties:
       TableName: ScoreboardSummedUpData
       AttributeDefinitions:
-        - AttributeName: name
-          AttributeType: S
-        - AttributeName: level
-          AttributeType: S
-        - AttributeName: os
-          AttributeType: S
-        - AttributeName: country
+        - AttributeName: player_name
           AttributeType: S
       KeySchema:
-        - AttributeName: name
+        - AttributeName: player_name
           KeyType: HASH
       ProvisionedThroughput:
         ReadCapacityUnits: 5
         WriteCapacityUnits: 5
-      GlobalSecondaryIndexes:
-      - IndexName: LevelIndex
-        KeySchema:
-          - AttributeName: level
-            KeyType: HASH
-        Projection:
-          ProjectionType: ALL
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5
-          WriteCapacityUnits: 5
-      - IndexName: OSIndex
-        KeySchema:
-          - AttributeName: os
-            KeyType: HASH
-        Projection:
-          ProjectionType: ALL
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5
-          WriteCapacityUnits: 5
-      - IndexName: CountryIndex
-        KeySchema:
-          - AttributeName: country
-            KeyType: HASH
-        Projection:
-          ProjectionType: ALL
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5
-          WriteCapacityUnits: 5
-
-
-
-  DLQConsumer:
-    Type: AWS::SQS::Queue
 
   DLQSummarize:
     Type: AWS::SQS::Queue
 
-  ScoreBoardStream:
-    Type: AWS::Kinesis::Stream
+  
+  # RESOURCES FOR RESTAPI: API Gateway -> Lambda -> DynamoDB
+  RestApiScoreboard:
+    Type: AWS::Serverless::Api
     Properties:
-      Name: kds_scoreboard
-      ShardCount: 2
-      StreamEncryption:
-        EncryptionType: KMS
-        KeyId: alias/aws/kinesis
+      StageName: prod
+      ApiKeySourceType: HEADER
+      Auth:
+        ApiKeyRequired: true
+  
+  RestiApiScoreboardDeployment:
+    Type: AWS::ApiGateway::Deployment
+    Properties:
+      RestApiId: !Ref RestApiScoreboard
+      StageName: dev
+
+  RestiApiScoreboardUsagePlan:
+    Type: AWS::ApiGateway::UsagePlan
+    Properties:
+      UsagePlanName: Scoreboard
+      Description: Usage plan for Scoreboard
+      ApiStages:
+        - ApiId: !Ref RestApiScoreboard
+          Stage: dev
+    DependsOn:
+         - RestiApiScoreboardDeployment
+
+  RestiApiScoreboardApiKey:
+    Type: AWS::ApiGateway::ApiKey
+    Properties:
+      Name: apikey_scoreboard
+      Description: API key for Scoreboard
+      Enabled: true
+
+  RestiApiScoreboardUsagePlanApiKey:
+    Type: AWS::ApiGateway::UsagePlanKey
+    Properties:
+      KeyId: !Ref RestiApiScoreboardApiKey
+      KeyType: API_KEY
+      UsagePlanId: !Ref RestiApiScoreboardUsagePlan
+
+  QueryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: query.lambda_handler
+      CodeUri: scoreboard
+      FunctionName: scoreboard_query
+      Timeout: 5
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref ScoreboardSummedUpData
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            RestApiId: !Ref RestApiScoreboard
+            Path: /score
+            Method: get
+            RequestParameters:
+              - method.request.querystring.order: 
+                  Required: true
+              - method.request.querystring.filter:
+                  Required: false
+
+
+Outputs:
+  ApiEndpoint:
+    Description: API endpoint URL for the deployed application
+    Value: !Sub "https://${RestApiScoreboard}.execute-api.${AWS::Region}.amazonaws.com/dev/score"
+  ApiKey:
+    Description: API key for accessing the Scoreboard API
+    Value: !Ref RestiApiScoreboardApiKey
