@@ -1,8 +1,8 @@
 from datetime import datetime
-from typing import Any
+from typing import Dict
 
 import boto3
-import schemas.player_schema as schemas
+import schemas.player_schema as schemas  # type: ignore
 from aws_lambda_powertools import Logger, Metrics, Tracer
 from aws_lambda_powertools.metrics import MetricUnit
 from aws_lambda_powertools.utilities.batch import (
@@ -22,7 +22,7 @@ from aws_lambda_powertools.utilities.validation import SchemaValidationError, va
 tracer = Tracer()
 logger = Logger()
 metrics = Metrics()
-dynamodb_client = boto3.client("dynamodb")
+dynamodb_client = boto3.client("dynamodb") # type: ignore[attr-defined]
 
 
 # Custom BatchProcessor class to handle errors and create metrics for error tracking
@@ -87,7 +87,7 @@ def record_handler(record: KinesisStreamRecord) -> None:
 @tracer.capture_lambda_handler
 @metrics.log_metrics(capture_cold_start_metric=True)
 def lambda_handler(
-    event: KinesisStreamRecord, context: LambdaContext
+    event: Dict, context: LambdaContext
 ) -> PartialItemFailureResponse:
     # Adding metrics to track the number of records to be processed at this time
     metrics.add_metric(

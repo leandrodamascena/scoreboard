@@ -1,5 +1,3 @@
-import json
-
 import boto3
 from aws_lambda_powertools import Logger, Metrics, Tracer
 from aws_lambda_powertools.metrics import MetricUnit
@@ -13,13 +11,13 @@ from aws_lambda_powertools.utilities.data_classes.dynamo_db_stream_event import 
     DynamoDBRecord,
 )
 from aws_lambda_powertools.utilities.typing import LambdaContext
-
+from typing import Dict
 processor = BatchProcessor(event_type=EventType.DynamoDBStreams)
 tracer = Tracer()
 logger = Logger()
 metrics = Metrics()
 
-dynamodb_client = boto3.client("dynamodb")
+dynamodb_client = boto3.client("dynamodb") # type: ignore[attr-defined]
 TABLE_NAME = "ScoreboardSummedUpData"
 
 
@@ -27,7 +25,7 @@ TABLE_NAME = "ScoreboardSummedUpData"
 def record_handler(record: DynamoDBRecord):
     if record.dynamodb and record.dynamodb.new_image:
         new_image = record.dynamodb.new_image
-        keys = record.dynamodb.keys
+        keys: Dict = record.dynamodb.keys # type: ignore[assignment]
 
         player_name = keys.get("player_name")
         player_country = new_image.get("player_country")

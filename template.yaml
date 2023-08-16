@@ -17,7 +17,6 @@ Globals:
       - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:32
 
 Resources:
-
   # RESOURCES FOR PRODUCER: EventBridge -> Lambda -> Kinesis
   ProducerFunction:
     Type: AWS::Serverless::Function
@@ -46,17 +45,17 @@ Resources:
 
   EventRuleScheduledProducer:
     Type: AWS::Events::Rule
-    Properties: 
+    Properties:
       Name: scheduled-producer-scoreboard
       ScheduleExpression: rate(1 minute)
       State: ENABLED
-      Targets: 
+      Targets:
         - Arn: !GetAtt ProducerFunction.Arn
           Id: !Ref ProducerFunction
-  
-  ProducerPermissionScheduler: 
+
+  ProducerPermissionScheduler:
     Type: AWS::Lambda::Permission
-    Properties: 
+    Properties:
       FunctionName: !Ref ProducerFunction
       Action: lambda:InvokeFunction
       Principal: events.amazonaws.com
@@ -88,7 +87,7 @@ Resources:
           Type: Kinesis
           Properties:
             Stream: !GetAtt ScoreBoardStream.Arn
-            BatchSize: 10
+            BatchSize: 100
             MaximumBatchingWindowInSeconds: 2
             StartingPosition: LATEST
             MaximumRetryAttempts: 2
@@ -132,7 +131,6 @@ Resources:
   DLQConsumer:
     Type: AWS::SQS::Queue
 
-  
   # RESOURCES FOR SUMMARIZE: DynamoDB -> Lambda -> DynamoDB
   SummarizeDataFunction:
     Type: AWS::Serverless::Function
@@ -184,46 +182,17 @@ Resources:
   DLQSummarize:
     Type: AWS::SQS::Queue
 
-  
   # RESOURCES FOR RESTAPI: API Gateway -> Lambda -> DynamoDB
+
   RestApiScoreboard:
     Type: AWS::Serverless::Api
     Properties:
       StageName: prod
       ApiKeySourceType: HEADER
-      Auth:
-        ApiKeyRequired: true
-  
-  RestiApiScoreboardDeployment:
-    Type: AWS::ApiGateway::Deployment
-    Properties:
-      RestApiId: !Ref RestApiScoreboard
-      StageName: dev
-
-  RestiApiScoreboardUsagePlan:
-    Type: AWS::ApiGateway::UsagePlan
-    Properties:
-      UsagePlanName: Scoreboard
-      Description: Usage plan for Scoreboard
-      ApiStages:
-        - ApiId: !Ref RestApiScoreboard
-          Stage: dev
-    DependsOn:
-         - RestiApiScoreboardDeployment
-
-  RestiApiScoreboardApiKey:
-    Type: AWS::ApiGateway::ApiKey
-    Properties:
-      Name: apikey_scoreboard
-      Description: API key for Scoreboard
-      Enabled: true
-
-  RestiApiScoreboardUsagePlanApiKey:
-    Type: AWS::ApiGateway::UsagePlanKey
-    Properties:
-      KeyId: !Ref RestiApiScoreboardApiKey
-      KeyType: API_KEY
-      UsagePlanId: !Ref RestiApiScoreboardUsagePlan
+      Cors: # see CORS section
+        AllowOrigin: "'*'" # NEVER in Prod ;)
+        AllowHeaders: "'Content-Type,Authorization,X-Amz-Date,X-Api-Key'"
+        MaxAge: "'300'"
 
   QueryFunction:
     Type: AWS::Serverless::Function
@@ -241,18 +210,14 @@ Resources:
           Properties:
             RestApiId: !Ref RestApiScoreboard
             Path: /score
-            Method: any
+            Method: GET
             RequestParameters:
-              - method.request.querystring.order: 
+              - method.request.querystring.order:
                   Required: true
               - method.request.querystring.filter:
                   Required: false
 
-
 Outputs:
   ApiEndpoint:
     Description: API endpoint URL for the deployed application
-    Value: !Sub "https://${RestApiScoreboard}.execute-api.${AWS::Region}.amazonaws.com/dev/score"
-  ApiKey:
-    Description: API key for accessing the Scoreboard API
-    Value: !Ref RestiApiScoreboardApiKey
+    Value: !Sub "https://${RestApiScoreboard}.execute-api.${AWS::Region}.amazonaws.com/prod/score"

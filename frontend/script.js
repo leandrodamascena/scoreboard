@@ -1,5 +1,5 @@
-const API_KEY = "IdsK5c4xBf3m1AHbol1Nq7ag0GRPqnTE592pwGoJ"
-const API_URL = "https://wdzyqmxvt7.execute-api.us-east-1.amazonaws.com/dev/score"
+const API_KEY = "MNHYv3wdlp4oamvpvrT3fZHRnqMUc1hj0s1ZQui0"
+const API_URL = "https://ksltle995c.execute-api.eu-west-1.amazonaws.com/prod/score"
 // JavaScript function to change the active tab and show the corresponding content
 function changeTab(tabIndex) {
   // Get all tab buttons and contents
@@ -42,13 +42,13 @@ function updateTableData(tabIndex) {
   $.ajax({
     url: API_URL,
     type: "GET",
-    headers: {"x-api-key": API_KEY},
-    xhrFields: {
-      withCredentials: true
-    },
-    beforeSend: function(xhr) {
-      xhr.setRequestHeader("x-api-key", API_KEY);
-  },
+    // headers: {"x-api-key": API_KEY},
+    // // xhrFields: {
+    // //   withCredentials: true
+    // // },
+    // beforeSend: function(xhr) {
+    //   xhr.setRequestHeader("x-api-key", API_KEY);
+    // },
     crossDomain: true,
     success: function(data) {
       // Update the table content
