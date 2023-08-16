@@ -21,8 +21,8 @@ Resources:
   ProducerFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: producer.lambda_handler
-      CodeUri: scoreboard
+      Handler: app.lambda_handler
+      CodeUri: producer
       FunctionName: scoreboard_producer
       Policies:
         # Lambda Destinations require additional permissions

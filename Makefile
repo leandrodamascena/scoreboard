@@ -2,7 +2,6 @@ dev:
 	$(MAKE) setup-venv
 	$(MAKE) setup-pipx
 	$(MAKE) setup-cli
-	$(MAKE) lock-dev
 	$(MAKE) sync-dev
 
 build:
@@ -18,9 +17,9 @@ lock-dev:
 	$(info "[*] Locking dev dependencies")
 	pip-compile --generate-hashes -o dev-requirements.txt dev-requirements.in
 
-sync-dev:
+sync-dev: lock-dev
 	$(info "[*] Synchronizing virtual environment with locked dev dependencies")
-	pip-sync dev-requirements.txt
+	pip install -r dev-requirements.txt -U
 
 upgrade-dev:
 	$(info "[*] Upgrading all dev dependencies")
