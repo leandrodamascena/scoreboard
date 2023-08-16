@@ -1,0 +1,21 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "scoreboard-demo"
+resolve_s3 = true
+s3_prefix = "scoreboard-demo"
+region = "eu-west-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+
+
+[default.build.parameters]
+cached = true
+parallel = true
+use_container = true
+
+[default.sync.parameters]
+watch = true
+stack_name = "scoreboard-demo"
+
+[default.local_start_api.parameters]
+warm_containers = "EAGER"

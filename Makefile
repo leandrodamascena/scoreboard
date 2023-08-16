@@ -5,6 +5,15 @@ dev:
 	$(MAKE) lock-dev
 	$(MAKE) sync-dev
 
+build:
+	sam build
+
+deploy:
+	sam deploy
+
+watch:
+	sam sync
+
 lock-dev:
 	$(info "[*] Locking dev dependencies")
 	pip-compile --generate-hashes -o dev-requirements.txt dev-requirements.in
