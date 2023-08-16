@@ -8,7 +8,7 @@ from aws_lambda_powertools import Logger, Metrics, Tracer
 from aws_lambda_powertools.logging import correlation_paths
 from aws_lambda_powertools.metrics import MetricUnit
 from aws_lambda_powertools.utilities.typing import LambdaContext
-from producer.data.players import MOCK_DATA  # type: ignore
+from data.players import MOCK_DATA  # type: ignore
 
 logger = Logger()
 metrics = Metrics()

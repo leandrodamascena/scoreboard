@@ -61,13 +61,13 @@ Resources:
       Principal: events.amazonaws.com
       SourceArn: !GetAtt EventRuleScheduledProducer.Arn
 
-  # RESOURCES FOR CONSUMER: Kinesis -> Lambda -> DynamoDB
-  ConsumerFunction:
+  # RESOURCES FOR STREAM PROCESSOR: Kinesis -> Lambda -> DynamoDB
+  StreamProcessorFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: consumer.lambda_handler
-      CodeUri: scoreboard
-      FunctionName: scoreboard_consumer
+      Handler: app.lambda_handler
+      CodeUri: stream_processor
+      FunctionName: scoreboard_stream_processor
       Timeout: 30
       Policies:
         # Lambda Destinations require additional permissions
@@ -79,7 +79,7 @@ Resources:
               - sqs:GetQueueAttributes
               - sqs:GetQueueUrl
               - sqs:SendMessage
-            Resource: !GetAtt DLQConsumer.Arn
+            Resource: !GetAtt DLQStreamProcessor.Arn
         - DynamoDBCrudPolicy:
             TableName: !Ref ScoreboardRawData
       Events:
@@ -93,17 +93,20 @@ Resources:
             MaximumRetryAttempts: 2
             DestinationConfig:
               OnFailure:
-                Destination: !GetAtt DLQConsumer.Arn
+                Destination: !GetAtt DLQStreamProcessor.Arn
             FunctionResponseTypes:
               - ReportBatchItemFailures
 
-  ConsumerFunctionPermissionKinesisInvoke:
+  StreamProcessorFunctionPermissionKinesisInvoke:
     Type: AWS::Lambda::Permission
     Properties:
       Action: lambda:InvokeFunction
-      FunctionName: !GetAtt ConsumerFunction.Arn
+      FunctionName: !GetAtt StreamProcessorFunction.Arn
       Principal: "kinesis.amazonaws.com"
       SourceArn: !GetAtt ScoreBoardStream.Arn
+
+  DLQStreamProcessor:
+    Type: AWS::SQS::Queue
 
   ScoreboardRawData:
     Type: AWS::DynamoDB::Table
@@ -127,9 +130,6 @@ Resources:
         Enabled: true
       StreamSpecification:
         StreamViewType: NEW_IMAGE
-
-  DLQConsumer:
-    Type: AWS::SQS::Queue
 
   # RESOURCES FOR SUMMARIZE: DynamoDB -> Lambda -> DynamoDB
   SummarizeDataFunction:
