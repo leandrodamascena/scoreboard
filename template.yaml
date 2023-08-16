@@ -5,7 +5,7 @@ Description: partial batch response sample
 Globals:
   Function:
     Timeout: 5
-    Runtime: python3.10
+    Runtime: python3.11
     Tracing: Active
     Environment:
       Variables:
