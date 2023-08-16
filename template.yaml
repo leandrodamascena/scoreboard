@@ -135,8 +135,8 @@ Resources:
   SummarizeDataFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: summarize.lambda_handler
-      CodeUri: scoreboard
+      Handler: app.lambda_handler
+      CodeUri: summarize
       FunctionName: scoreboard_summarize
       Timeout: 30
       Policies:

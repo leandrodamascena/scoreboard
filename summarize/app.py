@@ -18,7 +18,7 @@ logger = Logger()
 metrics = Metrics()
 
 dynamodb_client = boto3.client("dynamodb") # type: ignore[attr-defined]
-TABLE_NAME = "ScoreboardSummedUpData"
+TABLE_NAME = "ScoreboardSummedUpData"  # TODO: Use env var
 
 
 @tracer.capture_method
