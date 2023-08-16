@@ -3,14 +3,14 @@ from aws_lambda_powertools import Logger, Tracer
 from aws_lambda_powertools.event_handler import APIGatewayRestResolver, CORSConfig
 from aws_lambda_powertools.logging import correlation_paths
 from aws_lambda_powertools.utilities.typing import LambdaContext
-from shared.dynamodb import build_and_query_dynamodb # type: ignore[import]
+from data_builder.dynamodb import build_and_query_dynamodb
 
 tracer = Tracer()
 logger = Logger()
 cors_config = CORSConfig(allow_origin="*", allow_headers=["x-api-key"], max_age=300)
 app = APIGatewayRestResolver(cors=cors_config)
 
-dynamodb_client = boto3.client("dynamodb")  # type: ignore[attr-defined]
+dynamodb_client = boto3.client("dynamodb")
 
 
 @app.get("/score")

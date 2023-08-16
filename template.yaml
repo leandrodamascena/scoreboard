@@ -197,8 +197,8 @@ Resources:
   QueryFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: query.lambda_handler
-      CodeUri: scoreboard
+      Handler: app.lambda_handler
+      CodeUri: score_api
       FunctionName: scoreboard_query
       Timeout: 5
       Policies:
