@@ -14,7 +14,7 @@ Globals:
         POWERTOOLS_METRICS_NAMESPACE: PowertoolsScoreboard
 
     Layers:
-      - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:32
+      - !Sub arn:aws:lambda:${AWS::Region}:017000801446:layer:AWSLambdaPowertoolsPythonV2:40 # v2.22.0
 
 Resources:
   # RESOURCES FOR PRODUCER: EventBridge -> Lambda -> Kinesis

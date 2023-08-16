@@ -1,4 +1,0 @@
-requests
-urllib3<2
-# TODO: create requirements-dev.txt
-aws-lambda-powertools[all]
