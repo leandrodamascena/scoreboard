@@ -217,6 +217,18 @@ Resources:
               - method.request.querystring.filter:
                   Required: false
 
+  ResourcesMapParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+        Name: "/service/scorecard/test/config"
+        Type: String
+        Description: Service Map with common resources used for integ/e2e testing
+        Value: !Sub |
+            {
+                "KinesisStream": "kds_scoreboard",
+                "SummarizedTable": "ScoreboardSummedUpData",
+                "ScoreEndpoint": "https://${RestApiScoreboard}.execute-api.${AWS::Region}.amazonaws.com/prod/score"
+            }
 Outputs:
   ApiEndpoint:
     Description: API endpoint URL for the deployed application
